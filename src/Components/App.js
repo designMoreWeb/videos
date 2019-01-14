@@ -1,12 +1,12 @@
 //React files needed
 import React from 'react';
-
 //User created components
 import SearchBar from './SearchBar';
-import { ReactComponent } from '*.svg';
 
-class App extends ReactComponent{
-    
+class App extends React.Component{
+    render(){
+        return <div>Hello</div>
+    }
 };
 
 export default App;
