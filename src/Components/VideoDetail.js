@@ -4,7 +4,7 @@ import React from 'react';
 //User created components
 
 
-const VideoDetail = (props) =>{
+const VideoDetail = ({video}) =>{
     if (!video){
         return <div>Loading...</div>
     }
