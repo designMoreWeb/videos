@@ -1,14 +1,13 @@
-import Axios from 'axios';
+import axios from 'axios';
+
+const KEY = 'AIzaSyD8TSPa2MMAXRVjTMc45L-1J2VC2mpRpIk';
 
 export default 
-    Axios.create({
+    axios.create({
         baseURL: 'https://www.googleapis.com/youtube/v3',
         params:{
             part:'snippet',
             maxResults:5,
             key:KEY
-        },
-        headers:{
-            Authorization:'Client-ID AIzaSyABZ5d4N-MQMrytTgYKPY-gEu83tSLRDCA'
         }
 });
