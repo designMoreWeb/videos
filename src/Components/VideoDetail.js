@@ -2,7 +2,7 @@
 import React from 'react';
 
 //User created components
-
+import '../css/VideoItem.css'
 
 const VideoDetail = ({video}) =>{
     if (!video){

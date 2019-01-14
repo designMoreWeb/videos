@@ -6,11 +6,12 @@ import SearchBar from './SearchBar';
 import youtube from '../api/youtube';
 import VideoList from'./VideoList';
 import VideoDetail from './VideoDetail';
+import '../css/App.css';
 
 class App extends React.Component{
     state={videos:[],selectedVideo:null};
     componentDidMount(){
-        this.onFormSubmit('Escape Chill Tracks')
+        this.onFormSubmit('EscapeTracks')
     };
     onFormSubmit= async (term) => {
         const response = await youtube.get('/search',{
@@ -32,6 +33,7 @@ class App extends React.Component{
     render(){
        return(
            <div className='ui container'>
+           <h2 className="Video-Player-title">React Video Player</h2>
             <SearchBar onFormSubmit={this.onFormSubmit}/>
                 <div className="ui grid">
                     <div className="ui row">
