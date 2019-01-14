@@ -2,9 +2,9 @@
 import React from 'react';
 //User Created Components
 import VideoItem from './VideoItem';
-import App from './App';
 
-const VideoList = ({ videos }) =>{
+
+const VideoList = ({ videos,onVideoSelect }) =>{
     const renderVideoList = videos.map((video) => {
         return <VideoItem onVideoSelect={onVideoSelect} video={video} />;
     });
